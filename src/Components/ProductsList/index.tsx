@@ -31,7 +31,7 @@ import { useDispatch, useSelector } from 'react-redux'
             <td>{item.name}</td>
             <td>
           <button onClick={() =>{
-             dispatch({ type: "cart/add", payload: { ...item, quantity: 1 } })
+             dispatch({ type: "CART/ADD", payload: { ...item, quantity: 1 } })
             }}>
                     Add to cart
            </button>

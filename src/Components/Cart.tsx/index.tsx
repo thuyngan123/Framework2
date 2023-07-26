@@ -9,13 +9,13 @@ const Cart = () => {
                 <div key={item.id}>
                     {item.name} - {item?.quantity} - {item?.price * item?.quantity}
                     <button
-                        onClick={() => dispatch({ type: "cart/increase", payload: item.id })}
+                        onClick={() => dispatch({ type: "CART/INCREASE", payload: item.id })}
                     >Increase
                     </button>
                     <button
                         onClick={() =>{
                             console.log("Click decrease");
-                             dispatch({ type: "cart/decrease", payload: item.id })}
+                             dispatch({ type: "CART/DECREASE", payload: item.id })}
                         } 
                     >
                         Decrease
